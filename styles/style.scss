@@ -1,0 +1,175 @@
+@import "reset";
+@import "variables";
+
+body {
+    font-family: $main-font;
+}
+
+// NAVIGATION BAR STYLES
+nav {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .nav-items {
+            justify-content: space-between;
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width: 987px) {
+                width: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: $medium-large;
+                font-weight: $normal-font-weight;
+                line-height: 19.55px;
+                text-align: left;
+                color: $p-color;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+
+                @media only screen and (max-width: 967px) {
+                    display: none;
+                }
+            }
+
+            i {
+                scale: 2;
+                margin-top: 30px;
+                margin-right: 15px;
+                display: none;
+
+                @media only screen and (max-width: 967px) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// FIRST BIG IMAGES STYLES
+.cover-image {
+    width: 100%;
+    background-image: url(/images/first.png);
+    height: 610px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13px;
+
+    h2 {
+        font-size: 79px;
+        font-weight: $bold-font-weight;
+        line-height: 90.84px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 29px;
+
+        @media only screen and (max-width: 600px) {
+            padding: 122px;
+        }
+
+        // @media only screen and (max-width: 463px) {
+        //     margin-left: 32px;
+        // }
+    }
+
+    p {
+        font-size: $large-font;
+        font-weight: $normal-font-weight;
+        line-height: 21.85px;
+        text-align: left;
+        color: #fff;
+
+        @media only screen and (max-width: 600px) {
+            margin-top: -106px;
+        }
+    }
+}
+
+// SMALL DIV STYLES
+.bigdiv {
+    box-sizing: border-box;
+    width: 100%;
+    height: 685px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-around;
+
+    .smalldicovery {
+        height: 200px;
+        width: 213px;
+        margin-bottom: 60px;
+
+        p {
+            font-size: $medium-large;
+            font-weight: $normal-font-weight;
+            line-height: 19.55px;
+            text-align: left;
+            color: $p-color;
+            margin-bottom: 7px;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: $normal-font-weight;
+            line-height: 32.2px;
+            text-align: left;
+            color: #010101;
+            margin-bottom: 23px;
+        }
+    }
+
+    .six-small-divs {
+        width: 62%;
+        height: 681px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            height: 320px;
+            width: 286px;
+            margin-bottom: 35px;
+
+            h3 {
+                font-size: 19px;
+                font-weight: $normal-font-weight;
+                line-height: 21.85px;
+                text-align: left;
+                color: #343232;
+                margin-top: 18px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: $normal-font-weight;
+                line-height: 20.7px;
+                text-align: left;
+                color: $p-color;
+                margin-top: 14px;
+            }
+        }
+
+
+    }
+}
